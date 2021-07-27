@@ -8,7 +8,49 @@
     <author>
       <name>phillychi3</name>
     </author>
-    <updated>2021-07-18T06:05:56.000Z</updated>
+    <updated>2021-07-27T00:19:39.000Z</updated>
+    <entry>
+        <id>http://blog.phillychi3.tk/2021/07/27/expression-system-AI/</id>
+        <title>expression_system_AI</title>
+        <link rel="alternate" href="http://blog.phillychi3.tk/2021/07/27/expression-system-AI/"/>
+        <content type="html">&lt;h1 id=&#34;人臉表情辨識系統盲人社交輔助系統&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#人臉表情辨識系統盲人社交輔助系統&#34;&gt;#&lt;/a&gt; 人臉表情辨識系統 (盲人社交輔助系統)&lt;/h1&gt;
+&lt;p&gt;這是一個悲慘的專題&lt;br /&gt;
+原本我們使用的是&lt;br /&gt;
+微軟的 azure 來做表情辨識的部分&lt;br /&gt;
+但是在成果發表前 14 天&lt;br /&gt;
+指導老師表示對此不滿意&lt;br /&gt;
+要求我們改用自己訓練的方式&lt;br /&gt;
+&lt;em&gt;神奇的老師&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;原項目:&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2ZhY2V0cmFjaC1uaWhzMDgzMy9leHByZXNzaW9uX3N5c3RlbQ==&#34;&gt;https://github.com/facetrach-nihs0833/expression_system&lt;/span&gt;&lt;br /&gt;
+ 趕工後的 AI:&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2ZhY2V0cmFjaC1uaWhzMDgzMy9leHByZXNzaW9uX3N5c3RlbV9BSQ==&#34;&gt;https://github.com/facetrach-nihs0833/expression_system_AI&lt;/span&gt;&lt;br /&gt;
+&lt;s&gt; 這是我第一次寫 AI 這種東西&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;一開始我們使用的是 azure 原本以為使用外部的資源會一路順暢 結果還是遇到了滿滿的困難&lt;br /&gt;
+比如檢測線程把攝影機線程給卡住導致畫面顯示不順暢 或者是上傳過慢導致整體速度拖慢&lt;br /&gt;
+&lt;s&gt;雖然我這裡說遇到很多困難 但是我們還是比別組早完成了 5 個多月&lt;/s&gt;&lt;br /&gt;
+就在別組在水深火熱之中時 我們只要寫寫報告 弄弄小論文與海報就好&lt;br /&gt;
+&lt;s&gt;然而最後報應還是來了&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;我們臉部辨識的部分採用了目前最知名的 &lt;code&gt;opencv haarcascade_detect&lt;/code&gt; &lt;br /&gt;
+ 而套件使用了 pytorch，單純不喜歡 tensorflow&lt;br /&gt;
+ 在最初抓取了大約 5 萬張圖片進行訓練， 非常不易外的出現了過擬合&lt;br /&gt;
+這時候有 1. 照片過少 2. 單一表情數據過多 3. 隱藏層過多 的可能 (吧&lt;br /&gt;
+最初我們以為是 (1) 所以把照片數量擴充到 15 萬張&lt;br /&gt;
+但依然不見任何起色&lt;br /&gt;
+於是把單一種類照片限制為 1 萬張&lt;br /&gt;
+這時總算辨識結果出現點不一樣的東西了&lt;/p&gt;
+&lt;p&gt;這次最主要的難點是 dataset 的部分&lt;br /&gt;
+在很多教學網站上你會看到大家都建議你下載設定好的 pytorch dataset&lt;br /&gt;
+ 但這東西只適用於比較常見的 AI 例如手寫數字辨識&lt;br /&gt;
+反而自己訓練 dataset 成為比較稀有的東西 (?&lt;br /&gt;
+&lt;s&gt; 詳細的程式我在這裡就不說了 離我寫出這東西已經過了有一段時間了 我也怕我說錯&lt;/s&gt;&lt;br /&gt;
+你可以在我的專案下方查看 &lt;code&gt;create_dataser.py&lt;/code&gt;  這個檔案&lt;br /&gt;
+裡面有我怎麼設定 dataset 的 code&lt;/p&gt;
+&lt;p&gt;這次的專題雖然名稱為 盲人社交輔助系統 但最後主要設計的還是表情辨識的部分 有點可惜&lt;br /&gt;
+不然可以讓這次的專題更有意義 也可以讓自己在學習歷程上面多一點可以寫的東西&lt;br /&gt;
+很多專題在最後會由於技術問題與時間壓力讓自己偏離了遠有的想法，&lt;s&gt;就像原本我想做天眼 (後來被打槍&lt;/s&gt;&lt;/p&gt;
+</content>
+        <category term="AI" scheme="http://blog.phillychi3.tk/tags/AI/" />
+        <updated>2021-07-27T00:19:39.000Z</updated>
+    </entry>
     <entry>
         <id>http://blog.phillychi3.tk/2021/07/18/%E6%88%91%E4%B9%9F%E4%B8%8D%E7%9F%A5%E9%81%93/</id>
         <title>我也不知道</title>
@@ -46,6 +88,7 @@
  &lt;code&gt;confinue&lt;/code&gt;   跳回迴圈判斷&lt;/p&gt;
 &lt;h2 id=&#34;function&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#function&#34;&gt;#&lt;/a&gt; function&lt;/h2&gt;
 &lt;figure class=&#34;highlight js&#34;&gt;&lt;figcaption data-lang=&#34;JavaScript&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;lol&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;fuckthing&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; fuckthing&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
+        <category term="learn" scheme="http://blog.phillychi3.tk/tags/learn/" />
         <updated>2021-07-13T21:45:22.000Z</updated>
     </entry>
     <entry>
