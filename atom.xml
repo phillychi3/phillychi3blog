@@ -8,7 +8,84 @@
     <author>
       <name>phillychi3</name>
     </author>
-    <updated>2021-07-27T00:19:39.000Z</updated>
+    <updated>2021-12-15T13:53:15.000Z</updated>
+    <entry>
+        <id>http://blog.phillychi3.tk/2021/12/15/fix-youtubedl-caused-by-ExtractorError-Could-not-find-JS-function-na/</id>
+        <title>fix youtubedl (caused by ExtractorError(Could not find JS function &#39;na&#39;);</title>
+        <link rel="alternate" href="http://blog.phillychi3.tk/2021/12/15/fix-youtubedl-caused-by-ExtractorError-Could-not-find-JS-function-na/"/>
+        <content type="html">&lt;h1 id=&#34;youtube_dl錯誤&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#youtube_dl錯誤&#34;&gt;#&lt;/a&gt; youtube_dl 錯誤&lt;/h1&gt;
+&lt;p&gt;現在當你要下載 youtube 影片的時候&lt;br /&gt;
+你會發現&lt;br /&gt;
+喔天阿 我沒有辦法下載任何影片了&lt;/p&gt;
+&lt;p&gt;要如何修復？&lt;/p&gt;
+&lt;p&gt;在你的錯誤底下會有一個路徑叫做 xxxxxxx/youtube.py&lt;/p&gt;
+&lt;p&gt;打開你的檔案&lt;/p&gt;
+&lt;p&gt;在 1310 行附近&lt;br /&gt;
+你會看到這個東西&lt;/p&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;_parse_sig_js&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; jscode&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        funcname &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;_search_regex&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;r&#39;\b[cs]\s*&amp;amp;&amp;amp;\s*[adf]\.set\([^,]+\s*,\s*encodeURIComponent\s*\(\s*(?P&amp;lt;sig&gt;[a-zA-Z0-9$]+)\(&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;             &lt;span class=&#34;token string&#34;&gt;r&#39;\b[a-zA-Z0-9]+\s*&amp;amp;&amp;amp;\s*[a-zA-Z0-9]+\.set\([^,]+\s*,\s*encodeURIComponent\s*\(\s*(?P&amp;lt;sig&gt;[a-zA-Z0-9$]+)\(&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;             &lt;span class=&#34;token string&#34;&gt;r&#39;\bm=(?P&amp;lt;sig&gt;[a-zA-Z0-9$]&amp;#123;2,&amp;#125;)\(decodeURIComponent\(h\.s\)\)&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;             &lt;span class=&#34;token string&#34;&gt;r&#39;\bc&amp;amp;&amp;amp;\(c=(?P&amp;lt;sig&gt;[a-zA-Z0-9$]&amp;#123;2,&amp;#125;)\(decodeURIComponent\(c\)\)&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;             &lt;span class=&#34;token string&#34;&gt;r&#39;(?:\b|[^a-zA-Z0-9$])(?P&amp;lt;sig&gt;[a-zA-Z0-9$]&amp;#123;2,&amp;#125;)\s*=\s*function\(\s*a\s*\)\s*&amp;#123;\s*a\s*=\s*a\.split\(\s*&#34;&#34;\s*\);[a-zA-Z0-9$]&amp;#123;2&amp;#125;\.[a-zA-Z0-9$]&amp;#123;2&amp;#125;\(a,\d+\)&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;             &lt;span class=&#34;token string&#34;&gt;r&#39;(?:\b|[^a-zA-Z0-9$])(?P&amp;lt;sig&gt;[a-zA-Z0-9$]&amp;#123;2,&amp;#125;)\s*=\s*function\(\s*a\s*\)\s*&amp;#123;\s*a\s*=\s*a\.split\(\s*&#34;&#34;\s*\)&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;             &lt;span class=&#34;token string&#34;&gt;r&#39;(?P&amp;lt;sig&gt;[a-zA-Z0-9$]+)\s*=\s*function\(\s*a\s*\)\s*&amp;#123;\s*a\s*=\s*a\.split\(\s*&#34;&#34;\s*\)&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;             &lt;span class=&#34;token comment&#34;&gt;# Obsolete patterns&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;             &lt;span class=&#34;token string&#34;&gt;r&#39;([&#34;\&#39;])signature\1\s*,\s*(?P&amp;lt;sig&gt;[a-zA-Z0-9$]+)\(&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;             &lt;span class=&#34;token string&#34;&gt;r&#39;\.sig\|\|(?P&amp;lt;sig&gt;[a-zA-Z0-9$]+)\(&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;             &lt;span class=&#34;token string&#34;&gt;r&#39;yt\.akamaized\.net/\)\s*\|\|\s*.*?\s*[cs]\s*&amp;amp;&amp;amp;\s*[adf]\.set\([^,]+\s*,\s*(?:encodeURIComponent\s*\()?\s*(?P&amp;lt;sig&gt;[a-zA-Z0-9$]+)\(&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;             &lt;span class=&#34;token string&#34;&gt;r&#39;\b[cs]\s*&amp;amp;&amp;amp;\s*[adf]\.set\([^,]+\s*,\s*(?P&amp;lt;sig&gt;[a-zA-Z0-9$]+)\(&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;             &lt;span class=&#34;token string&#34;&gt;r&#39;\b[a-zA-Z0-9]+\s*&amp;amp;&amp;amp;\s*[a-zA-Z0-9]+\.set\([^,]+\s*,\s*(?P&amp;lt;sig&gt;[a-zA-Z0-9$]+)\(&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;             &lt;span class=&#34;token string&#34;&gt;r&#39;\bc\s*&amp;amp;&amp;amp;\s*a\.set\([^,]+\s*,\s*\([^)]*\)\s*\(\s*(?P&amp;lt;sig&gt;[a-zA-Z0-9$]+)\(&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;             &lt;span class=&#34;token string&#34;&gt;r&#39;\bc\s*&amp;amp;&amp;amp;\s*[a-zA-Z0-9]+\.set\([^,]+\s*,\s*\([^)]*\)\s*\(\s*(?P&amp;lt;sig&gt;[a-zA-Z0-9$]+)\(&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;             &lt;span class=&#34;token string&#34;&gt;r&#39;\bc\s*&amp;amp;&amp;amp;\s*[a-zA-Z0-9]+\.set\([^,]+\s*,\s*\([^)]*\)\s*\(\s*(?P&amp;lt;sig&gt;[a-zA-Z0-9$]+)\(&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            jscode&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;Initial JS player signature function name&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; group&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;sig&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;上面這串是修好的 把他貼上去就好了&lt;br /&gt;
+修復代碼來自: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3l0ZGwtb3JnL3lvdXR1YmUtZGwvcHVsbC8zMDM2Ng==&#34;&gt;https://github.com/ytdl-org/youtube-dl/pull/30366&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;然後等他更新？&lt;/p&gt;
+</content>
+        <updated>2021-12-15T13:53:15.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://blog.phillychi3.tk/2021/12/12/%E9%97%9C%E6%96%BC%E6%88%91%E9%96%8B%E7%B4%85%E7%9F%B3%E6%9C%8D%E9%80%99%E4%BB%B6%E4%BA%8B/</id>
+        <title>關於我開紅石服這件事</title>
+        <link rel="alternate" href="http://blog.phillychi3.tk/2021/12/12/%E9%97%9C%E6%96%BC%E6%88%91%E9%96%8B%E7%B4%85%E7%9F%B3%E6%9C%8D%E9%80%99%E4%BB%B6%E4%BA%8B/"/>
+        <content type="html">&lt;h1 id=&#34;關於我開生電服這件事&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#關於我開生電服這件事&#34;&gt;#&lt;/a&gt; 關於我開生電服這件事&lt;/h1&gt;
+&lt;p&gt;在 minecraft 有一種獨特的玩法，有別於其他模式，需要比較多心力的投入&lt;br /&gt;
+他的名子叫做生電服&lt;br /&gt;
+先上圖片&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://i.imgur.com/YsBuEMO.png&#34; alt=&#34;world&#34; /&gt;&lt;br /&gt;
+&lt;img data-src=&#34;https://i.imgur.com/xspGyLu.jpg&#34; alt=&#34;world&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;這種玩法最大的特色就是以紅石為主的生存方式&lt;br /&gt;
+怎麼搞到自己想要的物資？蓋機器&lt;br /&gt;
+所以伺服器人員必須要精挑細選&lt;br /&gt;
+並且要對 minecraft 有足夠的熱誠才有辦法這樣玩&lt;/p&gt;
+&lt;h2 id=&#34;初期&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#初期&#34;&gt;#&lt;/a&gt; 初期&lt;/h2&gt;
+&lt;p&gt;當初為甚麼我會想要開生電服？我本來只是想要開個可以討論紅石的創造伺服器&lt;br /&gt;
+但是同學想玩生存 我想說好吧 我開個主玩紅石的生存伺服器&lt;br /&gt;
+就這樣瞭望明日誕生了&lt;br /&gt;
+當初開服就只有我們同學們在玩&lt;br /&gt;
+直到有一天我架設了一個網站 並且把伺服器重新命名 叫做 TWRT 台灣紅石高科技伺服器&lt;br /&gt;
+就這樣 我遇到了 2000&lt;br /&gt;
+2000 是 TWRCS 的一個管理 當初會遇到他的原因也挺好笑的 他把我們伺服器的中文名看成是他們的&lt;br /&gt;
+然後就聯絡上了&lt;br /&gt;
+ 2000 教會了我使用 fabric 開服&lt;br /&gt;
+使用生電用的 mod&lt;br /&gt;
+ 之後伺服器進來了一些人 (但我都忘了有誰了：P)&lt;br /&gt;
+ 前期最重要的人是初音&lt;br /&gt;
+初音把前期所有重要工程全包了&lt;br /&gt;
+並且幾乎所有空置域都有他的身影&lt;br /&gt;
+在前期這段時間是我玩的最開心的時候 (因為沒啥學業壓力？030)&lt;br /&gt;
+ 加入的重要成員有 (阿比 (我記得他诶？？？&lt;br /&gt;
+ 還有認識了 jacky 他是 HKRAE 的服主&lt;/p&gt;
+&lt;h2 id=&#34;中期&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#中期&#34;&gt;#&lt;/a&gt; 中期&lt;/h2&gt;
+&lt;p&gt;之後還有一個重大的轉折點&lt;br /&gt;
+我遇到了 Fond&lt;br /&gt;
+ 他是一個 minecraft 的 youtuber&lt;br /&gt;
+ 在最早期我邀請他來我們伺服器遊玩&lt;br /&gt;
+之後就認識上了 我們一起拍了一些影片 幫他開了粉絲服&lt;br /&gt;
+開了大概 1~2 個月 中間發生很多事情&lt;br /&gt;
+很多 很多 很多&lt;br /&gt;
+經過了 %$^^&amp;amp;(*) 之後&lt;br /&gt;
+分開了&lt;/p&gt;
+&lt;p&gt;由於遇到 fond&lt;br /&gt;
+ 我遇到了 AU 和小毛？&lt;br /&gt;
+AU 是個大佬 不只會肝也會研發機器&lt;/p&gt;
+&lt;p&gt;小毛那時剛玩 建築超級好 我當初以為他只是個建築師&lt;br /&gt;
+然後他之後轉玩紅石 也是秀的我滿臉&lt;/p&gt;
+&lt;p&gt;之後由於我的問題 我把 TWRT 關了：P&lt;br /&gt;
+ 我也不知道為啥要關&lt;br /&gt;
+可能我邊看段考邊看到內部吵架瘋了吧&lt;br /&gt;
+&lt;s&gt;然後我就在星巴克躺在同學身上把伺服器給關了？？&lt;/s&gt;&lt;br /&gt;
+ 不過確實也輕鬆不少&lt;/p&gt;
+&lt;h2 id=&#34;後期&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#後期&#34;&gt;#&lt;/a&gt; 後期&lt;/h2&gt;
+&lt;p&gt;還沒寫诶&lt;/p&gt;
+</content>
+        <category term="minecraft" scheme="http://blog.phillychi3.tk/tags/minecraft/" />
+        <updated>2021-12-11T18:29:29.000Z</updated>
+    </entry>
     <entry>
         <id>http://blog.phillychi3.tk/2021/07/27/expression-system-AI/</id>
         <title>expression_system_AI</title>
