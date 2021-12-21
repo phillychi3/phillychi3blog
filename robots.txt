@@ -6,8 +6,10 @@ Allow: /categories/
 Allow: /tags/
 Allow: /about/ 
 
-# Disallow: /js/
-# Disallow: /css/
-# Disallow: /fancybox/
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /vendors/
+Disallow: /fancybox/
 
-Sitemap: https://blog.phillychi3.tk//sitemap.xml
+Sitemap: https://blog.phillychi3.tk/sitemap.xml
