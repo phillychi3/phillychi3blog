@@ -10,12 +10,27 @@
         </author>
         <description>一個邊緣高職生</description>
         <language>zh-TW</language>
-        <pubDate>Wed, 15 Dec 2021 21:53:15 +0800</pubDate>
-        <lastBuildDate>Wed, 15 Dec 2021 21:53:15 +0800</lastBuildDate>
+        <pubDate>Sun, 02 Jan 2022 16:11:19 +0800</pubDate>
+        <lastBuildDate>Sun, 02 Jan 2022 16:11:19 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">http://blog.phillychi3.tk/2022/01/02/2021%E7%B8%BD%E5%9B%9E%E9%A1%A7/</guid>
+            <title>2021總回顧</title>
+            <link>http://blog.phillychi3.tk/2022/01/02/2021%E7%B8%BD%E5%9B%9E%E9%A1%A7/</link>
+            <pubDate>Sun, 02 Jan 2022 16:11:19 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;2021總回顧&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2021總回顧&#34;&gt;#&lt;/a&gt; 2021 總回顧&lt;/h1&gt;
+&lt;p&gt;2021 對我是改變重大的一年，2021 剛好是我 2 年級下學期，因為專題的原因開始去專精 python，&lt;br /&gt;
+在 2020 寫出了使用 azure 的辨識系統之後，我專題暫時沒有甚麼煩惱，畢竟老師也沒有去管理我們的進度，那時剛好接觸了 vtuber，我們同學剛好需要一個可以提醒直播通知的 bot，於是我在 2 月的時候寫出了 youutbe-lv，這是我第一個在 python 可以運作的套件，那時我剛好認識了 alen，他教了一些關於 discord bot 的東西，順勢做出了 ddhelper，正式打開了寫 discord bot 的路。&lt;/p&gt;
+&lt;p&gt;我在今年學會了寫 js 以及 go，雖然幾乎都沒有用到過 XDD，但以備不時之需：P&lt;br /&gt;
+ 今年寫 code 寫了 2000 多個小時，但是覺得沒有很夠，還有很多東西沒有做出來&lt;br /&gt;
+希望之後有時間去弄。&lt;/p&gt;
+&lt;p&gt;本來想打很多的 但是我不知道要打什麼 LOL&lt;/p&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">http://blog.phillychi3.tk/2021/12/15/fix-youtubedl-caused-by-ExtractorError-Could-not-find-JS-function-na/</guid>
             <title>fix youtubedl (caused by ExtractorError(Could not find JS function &#39;na&#39;);</title>
             <link>http://blog.phillychi3.tk/2021/12/15/fix-youtubedl-caused-by-ExtractorError-Could-not-find-JS-function-na/</link>
+            <category term="fix" scheme="http://blog.phillychi3.tk/tags/fix/" />
             <pubDate>Wed, 15 Dec 2021 21:53:15 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;youtube_dl錯誤&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#youtube_dl錯誤&#34;&gt;#&lt;/a&gt; youtube_dl 錯誤&lt;/h1&gt;
 &lt;p&gt;現在當你要下載 youtube 影片的時候&lt;br /&gt;
@@ -72,7 +87,6 @@
  在最早期我邀請他來我們伺服器遊玩&lt;br /&gt;
 之後就認識上了 我們一起拍了一些影片 幫他開了粉絲服&lt;br /&gt;
 開了大概 1~2 個月 中間發生很多事情&lt;br /&gt;
-很多 很多 很多&lt;br /&gt;
 經過了 %$^^&amp;amp;(*) 之後&lt;br /&gt;
 分開了&lt;/p&gt;
 &lt;p&gt;由於遇到 fond&lt;br /&gt;
@@ -81,12 +95,21 @@ AU 是個大佬 不只會肝也會研發機器&lt;/p&gt;
 &lt;p&gt;小毛那時剛玩 建築超級好 我當初以為他只是個建築師&lt;br /&gt;
 然後他之後轉玩紅石 也是秀的我滿臉&lt;/p&gt;
 &lt;p&gt;之後由於我的問題 我把 TWRT 關了：P&lt;br /&gt;
- 我也不知道為啥要關&lt;br /&gt;
-可能我邊看段考邊看到內部吵架瘋了吧&lt;br /&gt;
-&lt;s&gt;然後我就在星巴克躺在同學身上把伺服器給關了？？&lt;/s&gt;&lt;br /&gt;
- 不過確實也輕鬆不少&lt;/p&gt;
+ 可能我邊看段考邊看到內部吵架瘋了吧&lt;br /&gt;
+不過確實也輕鬆不少&lt;/p&gt;
 &lt;h2 id=&#34;後期&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#後期&#34;&gt;#&lt;/a&gt; 後期&lt;/h2&gt;
-&lt;p&gt;還沒寫诶&lt;/p&gt;
+&lt;p&gt;twrt 關了之後 開了 nwers&lt;br /&gt;
+ 最後也是因為沒有人玩所以關掉了&lt;br /&gt;
+原本有打算再開 TWRT&lt;br /&gt;
+ 但是由於小毛開了一個新伺服器 (SMT)&lt;br /&gt;
+ 所以我打算就不開了&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;在台灣想開紅石服是件非常困難的事情&lt;br /&gt;
+因為會想玩的人很少&lt;br /&gt;
+大部分都是進來看看就走的人&lt;br /&gt;
+就算他是會玩的人&lt;br /&gt;
+也很難去持久&lt;br /&gt;
+希望有一天台灣也可以發展出強大的生電圈。&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -185,23 +208,6 @@ AU 是個大佬 不只會肝也會研發機器&lt;/p&gt;
  找到第 41 行，修改為:  &lt;code&gt;  const list = yaml.load(content);&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;在 blog 目錄找到 themes/shoka/scripts/tags/media.js&lt;br /&gt;
  找到第 10 行，修改為:  &lt;code&gt;  const list = yaml.load(content);&lt;/code&gt;&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">http://blog.phillychi3.tk/2021/06/07/hello-world/</guid>
-            <title>Hello World</title>
-            <link>http://blog.phillychi3.tk/2021/06/07/hello-world/</link>
-            <pubDate>Mon, 07 Jun 2021 04:38:51 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;Welcome to &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvLw==&#34;&gt;Hexo&lt;/span&gt;! This is your very first post. Check &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv&#34;&gt;documentation&lt;/span&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=&#34;&gt;troubleshooting&lt;/span&gt; or you can ask me on &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==&#34;&gt;GitHub&lt;/span&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
-&lt;h3 id=&#34;create-a-new-post&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#create-a-new-post&#34;&gt;#&lt;/a&gt; Create a new post&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo new &lt;span class=&#34;token string&#34;&gt;&#34;My New Post&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s&#34;&gt;Writing&lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&#34;run-server&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#run-server&#34;&gt;#&lt;/a&gt; Run server&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo server&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=&#34;&gt;Server&lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&#34;generate-static-files&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#generate-static-files&#34;&gt;#&lt;/a&gt; Generate static files&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo generate&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s&#34;&gt;Generating&lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&#34;deploy-to-remote-sites&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#deploy-to-remote-sites&#34;&gt;#&lt;/a&gt; Deploy to remote sites&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo deploy&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s&#34;&gt;Deployment&lt;/span&gt;&lt;/p&gt;
  ]]></description>
         </item>
     </channel>
