@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.phillychi3.tk/2022/01/05/%E4%BF%AE%E5%BE%A9dns%E8%A7%A3%E6%9E%90%E9%8C%AF%E8%AA%A4/</loc>
+    
+    <lastmod>2022-01-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.phillychi3.tk/2022/01/02/2021%E7%B8%BD%E5%9B%9E%E9%A1%A7/</loc>
     
     <lastmod>2022-01-02</lastmod>
@@ -76,36 +85,36 @@
 
   <url>
     <loc>http://blog.phillychi3.tk/</loc>
-    <lastmod>2022-01-02</lastmod>
+    <lastmod>2022-01-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>http://blog.phillychi3.tk/tags/fix/</loc>
-    <lastmod>2022-01-02</lastmod>
+    <loc>http://blog.phillychi3.tk/tags/AI/</loc>
+    <lastmod>2022-01-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://blog.phillychi3.tk/tags/AI/</loc>
-    <lastmod>2022-01-02</lastmod>
+    <loc>http://blog.phillychi3.tk/tags/fix/</loc>
+    <lastmod>2022-01-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://blog.phillychi3.tk/tags/learn/</loc>
-    <lastmod>2022-01-02</lastmod>
+    <lastmod>2022-01-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://blog.phillychi3.tk/tags/minecraft/</loc>
-    <lastmod>2022-01-02</lastmod>
+    <lastmod>2022-01-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

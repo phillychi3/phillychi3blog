@@ -7,6 +7,14 @@
     "home_page_url": "http://blog.phillychi3.tk",
     "items": [
         {
+            "id": "http://blog.phillychi3.tk/2022/01/05/%E4%BF%AE%E5%BE%A9dns%E8%A7%A3%E6%9E%90%E9%8C%AF%E8%AA%A4/",
+            "url": "http://blog.phillychi3.tk/2022/01/05/%E4%BF%AE%E5%BE%A9dns%E8%A7%A3%E6%9E%90%E9%8C%AF%E8%AA%A4/",
+            "title": "修復dns解析錯誤",
+            "date_published": "2022-01-04T16:19:44.000Z",
+            "content_html": "<h1 id=\"修復dns解析錯誤\"><a class=\"anchor\" href=\"#修復dns解析錯誤\">#</a> 修復 dns 解析錯誤</h1>\n<p>很多時候會遇到神奇的問題<br />\n比如我第一台電腦可以連上某個網站<br />\n第二台不行</p>\n<p>點開你的網路<br />\n<img data-src=\"https://cdn.discordapp.com/attachments/927960120116260864/927960130002251787/unknown.png\" alt=\"image\" /><br />\n 開啟網際網路設定<br />\n<img data-src=\"https://cdn.discordapp.com/attachments/927960120116260864/927960240295661568/unknown.png\" alt=\"image\" /><br />\n 變更介面卡設定<br />\n<img data-src=\"https://cdn.discordapp.com/attachments/927960120116260864/927960385200463882/unknown.png\" alt=\"image\" /><br />\n 找到乙太網路 (或者無線網路)<br />\n<img data-src=\"https://cdn.discordapp.com/attachments/927960120116260864/927960487797338212/unknown.png\" alt=\"image\" /><br />\n 點開內容<br />\n<img data-src=\"https://cdn.discordapp.com/attachments/927960120116260864/927960598891860029/unknown.png\" alt=\"image\" /><br />\n 找到網際網路協定第 4 版<br />\n<img data-src=\"https://cdn.discordapp.com/attachments/927960120116260864/927960640574849114/unknown.png\" alt=\"image\" /><br />\n 把這裡改成 (8.8.8.8)(8.8.4.4)<br />\n 或者 (1.1.1.1)(1.0.0.1)<br />\n<img data-src=\"https://cdn.discordapp.com/attachments/927960120116260864/927960669104525362/unknown.png\" alt=\"image\" /></p>\n",
+            "tags": []
+        },
+        {
             "id": "http://blog.phillychi3.tk/2022/01/02/2021%E7%B8%BD%E5%9B%9E%E9%A1%A7/",
             "url": "http://blog.phillychi3.tk/2022/01/02/2021%E7%B8%BD%E5%9B%9E%E9%A1%A7/",
             "title": "2021總回顧",

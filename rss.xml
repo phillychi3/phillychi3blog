@@ -10,8 +10,34 @@
         </author>
         <description>一個邊緣高職生</description>
         <language>zh-TW</language>
-        <pubDate>Sun, 02 Jan 2022 16:11:19 +0800</pubDate>
-        <lastBuildDate>Sun, 02 Jan 2022 16:11:19 +0800</lastBuildDate>
+        <pubDate>Wed, 05 Jan 2022 00:19:44 +0800</pubDate>
+        <lastBuildDate>Wed, 05 Jan 2022 00:19:44 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">http://blog.phillychi3.tk/2022/01/05/%E4%BF%AE%E5%BE%A9dns%E8%A7%A3%E6%9E%90%E9%8C%AF%E8%AA%A4/</guid>
+            <title>修復dns解析錯誤</title>
+            <link>http://blog.phillychi3.tk/2022/01/05/%E4%BF%AE%E5%BE%A9dns%E8%A7%A3%E6%9E%90%E9%8C%AF%E8%AA%A4/</link>
+            <pubDate>Wed, 05 Jan 2022 00:19:44 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;修復dns解析錯誤&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#修復dns解析錯誤&#34;&gt;#&lt;/a&gt; 修復 dns 解析錯誤&lt;/h1&gt;
+&lt;p&gt;很多時候會遇到神奇的問題&lt;br /&gt;
+比如我第一台電腦可以連上某個網站&lt;br /&gt;
+第二台不行&lt;/p&gt;
+&lt;p&gt;點開你的網路&lt;br /&gt;
+&lt;img data-src=&#34;https://cdn.discordapp.com/attachments/927960120116260864/927960130002251787/unknown.png&#34; alt=&#34;image&#34; /&gt;&lt;br /&gt;
+ 開啟網際網路設定&lt;br /&gt;
+&lt;img data-src=&#34;https://cdn.discordapp.com/attachments/927960120116260864/927960240295661568/unknown.png&#34; alt=&#34;image&#34; /&gt;&lt;br /&gt;
+ 變更介面卡設定&lt;br /&gt;
+&lt;img data-src=&#34;https://cdn.discordapp.com/attachments/927960120116260864/927960385200463882/unknown.png&#34; alt=&#34;image&#34; /&gt;&lt;br /&gt;
+ 找到乙太網路 (或者無線網路)&lt;br /&gt;
+&lt;img data-src=&#34;https://cdn.discordapp.com/attachments/927960120116260864/927960487797338212/unknown.png&#34; alt=&#34;image&#34; /&gt;&lt;br /&gt;
+ 點開內容&lt;br /&gt;
+&lt;img data-src=&#34;https://cdn.discordapp.com/attachments/927960120116260864/927960598891860029/unknown.png&#34; alt=&#34;image&#34; /&gt;&lt;br /&gt;
+ 找到網際網路協定第 4 版&lt;br /&gt;
+&lt;img data-src=&#34;https://cdn.discordapp.com/attachments/927960120116260864/927960640574849114/unknown.png&#34; alt=&#34;image&#34; /&gt;&lt;br /&gt;
+ 把這裡改成 (8.8.8.8)(8.8.4.4)&lt;br /&gt;
+ 或者 (1.1.1.1)(1.0.0.1)&lt;br /&gt;
+&lt;img data-src=&#34;https://cdn.discordapp.com/attachments/927960120116260864/927960669104525362/unknown.png&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">http://blog.phillychi3.tk/2022/01/02/2021%E7%B8%BD%E5%9B%9E%E9%A1%A7/</guid>
             <title>2021總回顧</title>
