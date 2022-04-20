@@ -7,6 +7,16 @@
     "home_page_url": "http://blog.phillychi3.tk",
     "items": [
         {
+            "id": "http://blog.phillychi3.tk/2022/04/20/%E4%BF%AE%E5%BE%A9win-kex%E5%AE%89%E8%A3%9D%E9%8C%AF%E8%AA%A4/",
+            "url": "http://blog.phillychi3.tk/2022/04/20/%E4%BF%AE%E5%BE%A9win-kex%E5%AE%89%E8%A3%9D%E9%8C%AF%E8%AA%A4/",
+            "title": "修復win-kex安裝錯誤",
+            "date_published": "2022-04-20T08:44:06.000Z",
+            "content_html": "<p><s>我怎麼一直在修東西阿</s></p>\n<p>當你執行 <code>sudo apt install -y kali-win-kex</code>  的時候 他會彈出一個錯誤<br />\n說是這個東西不存在，我去了預設鏡像看了一下<span class=\"exturl\" data-url=\"aHR0cDovL2h0dHAua2FsaS5vcmcva2FsaS9wb29sL21haW4vci9ydWJiZXJiYW5kL2xpYnJ1YmJlcmJhbmQyXzIuMC4yJTJiZGZzZzAtMl9hbWQ2NC5kZWI=\">網站</span><br />\n發現他真的沒有東西<br />\n這時候就輪到鏡像站出場了</p>\n<p>先去備份需要修改的檔案 <code>sudo cp /etc/apt/sources.list /etc/apt/sources.listbak</code></p>\n<p>然後使用任意編輯器打開他 <code>sudo nano /etc/apt/sources.list</code></p>\n<p>把 <code>http://http.kali.org</code>  換成 <code>https://mirrors.ocf.berkeley.edu/kali/</code></p>\n<p>然後刷新<br />\n <code>sudo apt clean</code> <br />\n <code>sudo apt update &amp;&amp; apt upgrade -y</code></p>\n<p>就可以用了：P</p>\n",
+            "tags": [
+                "fix"
+            ]
+        },
+        {
             "id": "http://blog.phillychi3.tk/2022/01/05/%E4%BF%AE%E5%BE%A9dns%E8%A7%A3%E6%9E%90%E9%8C%AF%E8%AA%A4/",
             "url": "http://blog.phillychi3.tk/2022/01/05/%E4%BF%AE%E5%BE%A9dns%E8%A7%A3%E6%9E%90%E9%8C%AF%E8%AA%A4/",
             "title": "修復dns解析錯誤",

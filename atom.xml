@@ -8,7 +8,27 @@
     <author>
       <name>phillychi3</name>
     </author>
-    <updated>2022-01-04T16:19:44.000Z</updated>
+    <updated>2022-04-20T08:44:06.000Z</updated>
+    <entry>
+        <id>http://blog.phillychi3.tk/2022/04/20/%E4%BF%AE%E5%BE%A9win-kex%E5%AE%89%E8%A3%9D%E9%8C%AF%E8%AA%A4/</id>
+        <title>修復win-kex安裝錯誤</title>
+        <link rel="alternate" href="http://blog.phillychi3.tk/2022/04/20/%E4%BF%AE%E5%BE%A9win-kex%E5%AE%89%E8%A3%9D%E9%8C%AF%E8%AA%A4/"/>
+        <content type="html">&lt;p&gt;&lt;s&gt;我怎麼一直在修東西阿&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;當你執行 &lt;code&gt;sudo apt install -y kali-win-kex&lt;/code&gt;  的時候 他會彈出一個錯誤&lt;br /&gt;
+說是這個東西不存在，我去了預設鏡像看了一下&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2h0dHAua2FsaS5vcmcva2FsaS9wb29sL21haW4vci9ydWJiZXJiYW5kL2xpYnJ1YmJlcmJhbmQyXzIuMC4yJTJiZGZzZzAtMl9hbWQ2NC5kZWI=&#34;&gt;網站&lt;/span&gt;&lt;br /&gt;
+發現他真的沒有東西&lt;br /&gt;
+這時候就輪到鏡像站出場了&lt;/p&gt;
+&lt;p&gt;先去備份需要修改的檔案 &lt;code&gt;sudo cp /etc/apt/sources.list /etc/apt/sources.listbak&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;然後使用任意編輯器打開他 &lt;code&gt;sudo nano /etc/apt/sources.list&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;把 &lt;code&gt;http://http.kali.org&lt;/code&gt;  換成 &lt;code&gt;https://mirrors.ocf.berkeley.edu/kali/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;然後刷新&lt;br /&gt;
+ &lt;code&gt;sudo apt clean&lt;/code&gt; &lt;br /&gt;
+ &lt;code&gt;sudo apt update &amp;amp;&amp;amp; apt upgrade -y&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;就可以用了：P&lt;/p&gt;
+</content>
+        <category term="fix" scheme="http://blog.phillychi3.tk/tags/fix/" />
+        <updated>2022-04-20T08:44:06.000Z</updated>
+    </entry>
     <entry>
         <id>http://blog.phillychi3.tk/2022/01/05/%E4%BF%AE%E5%BE%A9dns%E8%A7%A3%E6%9E%90%E9%8C%AF%E8%AA%A4/</id>
         <title>修復dns解析錯誤</title>
