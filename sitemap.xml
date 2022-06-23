@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.phillychi3.tk/2022/06/23/%E5%A6%82%E4%BD%95%E5%BC%84discordtw-webhook/</loc>
+    
+    <lastmod>2022-06-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.phillychi3.tk/2022/04/20/%E4%BF%AE%E5%BE%A9win-kex%E5%AE%89%E8%A3%9D%E9%8C%AF%E8%AA%A4/</loc>
     
     <lastmod>2022-04-20</lastmod>
@@ -94,7 +103,7 @@
 
   <url>
     <loc>http://blog.phillychi3.tk/</loc>
-    <lastmod>2022-04-20</lastmod>
+    <lastmod>2022-06-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -102,21 +111,21 @@
   
   <url>
     <loc>http://blog.phillychi3.tk/tags/AI/</loc>
-    <lastmod>2022-04-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.phillychi3.tk/tags/fix/</loc>
-    <lastmod>2022-04-20</lastmod>
+    <lastmod>2022-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://blog.phillychi3.tk/tags/learn/</loc>
-    <lastmod>2022-04-20</lastmod>
+    <lastmod>2022-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.phillychi3.tk/tags/fix/</loc>
+    <lastmod>2022-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
